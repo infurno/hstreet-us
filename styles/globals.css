@@ -36,3 +36,7 @@ code {
   justify-content: center;
   align-items: center;
 }
+.blur-backdrop-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
