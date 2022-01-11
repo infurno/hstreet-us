@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import logo from '../public/hstreet-logo.svg'
+
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
@@ -16,8 +19,8 @@ export default function Header({ title }) {
   return (
     <div className="relative z-10 w-full bg-gray-900 bg-opacity-50 shadow-sm bg-clip-padding blur-backdrop-filter">
       <nav className='relative flex items-center justify-between w-full max-w-screen-xl px-5 py-5 mx-auto text-white lg:px-2 lg:shadow-none'>
-        <div className='absolute inset-0 z-0 block w-full h-full shadow-md opacity-50 lg:hidden'>
-
+        <div className='absolute inset-0 z-0 block w-full h-full shadow-md opacity-50'>
+          <Image src={logo} height={100} width={100} />
         </div>
       </nav>
     </div>
